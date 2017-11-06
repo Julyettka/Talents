@@ -1,0 +1,145 @@
+@import "variables";
+
+.header{
+    grid-area: header;
+    background-color: $color-main;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.navigation{
+    grid-area: navigation;
+    width: 100%;
+    background-color: white;
+    top: 36px;
+    position: fixed;
+    z-index: 3;
+}
+
+.contact-stripe{
+    height: 24px;
+    font-family: $LatoRegular;
+    font-size: 12px;
+    margin-top: 12px;
+    .contact-stripe__phone{
+        padding-left: 30px;
+    }
+    .contact-stripe__phone, .contact-stripe__email{
+        color: white;
+    }
+}
+
+.navigation{
+    height: 90px;
+}
+
+.menu{
+    position: relative;
+    height: 100%;
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+}
+
+.menu__links{
+    @include flexbox;
+    @include justify-content(space-between);
+    width: 75%;
+    li{
+        font-family: $LatoSemiBold;
+        text-transform: uppercase;
+        a{
+            padding: 10px;
+            color: black;
+            &:hover{
+                color: $text-hover;
+            }
+        }
+    }
+}
+
+.menu__links__login{
+    position: relative;
+    text-transform: capitalize;
+    font-size: 13px;
+    padding: 8px 15px 8px 30px !important;
+    border: 1px solid black;
+    border-radius: 10px;
+    &:before{
+       content: " ";
+       box-sizing: border-box;
+       width: 15px;
+       height: 15px;
+       position: absolute;
+       top: 9px;
+       left: 10px;
+       background: $icon-login;
+    }
+    &:hover{
+        border: 1px solid $text-hover;
+    }
+}
+
+.fa-angle-down{
+    padding-left: 5px;
+}
+
+.navbar-toggle{
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #585858;
+    padding: 9px 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: none;
+}
+
+@media only screen and (min-width: 635px) and (max-width: 1023px){
+    .navigation .menu{
+        @include justify-content(space-around);
+        @include align-items(center);
+    }
+}
+
+@media only screen and (min-width: 914px) and (max-width: 1023px){
+    .menu__links{
+        width: 83%;
+    }
+}
+@media only screen and (min-width: 864px) and (max-width: 913px){
+    .menu__links{
+        width: 88%;
+    }
+}
+@media only screen and (min-width: 755px) and (max-width: 863px){
+    .menu__links{
+        width: 90%;
+    }
+    .menu__links__main{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 635px) and (max-width: 754px){
+    .menu__links__main, .menu__links__evaluation{
+        display: none;
+    }
+    .menu__links{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 634px){
+    .menu__links{
+        display: none;
+    }
+    .navbar-toggle{
+        display: unset;
+    }
+}

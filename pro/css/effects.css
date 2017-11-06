@@ -1,0 +1,38 @@
+.navigation {
+  -webkit-box-shadow: 1px 1px 5px #888888;
+  -moz-box-shadow: 1px 1px 5px #888888;
+  box-shadow: 1px 1px 5px #888888; }
+
+.main__intro__button:hover, .enroll__content__button:hover, .history__content__button:hover {
+  background-color: #b20054;
+  border: 1px solid #b20054;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+
+.about__content__button:hover,
+.contacts__nested__card__button:hover {
+  background-color: #2e2771;
+  border: 1px solid #2e2771;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+
+.service__nested__card__button:hover, .team__nested__card__button:hover {
+  background-color: #232329;
+  border: 1px solid #232329;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+
+.main__intro__button:active, .enroll__content__button:active, .history__content__button:active,
+.about__content__button:active, .contacts__nested__card__button:active, .service__nested__card__button:active,
+.team__nested__card__button:active {
+  position: relative;
+  top: 1px; }

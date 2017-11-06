@@ -1,0 +1,37 @@
+@import "variables";
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/Lato/LatoRegular.ttf") format("truetype"), url("../fonts/Lato/LatoRegular.woff") format("woff"), url("../fonts/Lato/LatoRegular.eot?") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "LatoSemibold";
+  src: url("../fonts/Lato/Lato-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/Lato/LatoBold.ttf") format("truetype"), url("../fonts/Lato/LatoBold.woff") format("woff"), url("../fonts/Lato/LatoBold.eot?") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "LatoBlack";
+  src: url("../fonts/Lato/Lato-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LatoBoldItalic";
+  src: url("../fonts/Lato/LatoBoldItalic.ttf") format("truetype"), url("../fonts/Lato/LatoBoldItalic.woff") format("woff"), url("../fonts/Lato/LatoBoldItalic.eot?") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+

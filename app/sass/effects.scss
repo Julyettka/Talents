@@ -1,0 +1,42 @@
+@import "mixins";
+@import "variables";
+
+.navigation{
+     @include box-shadow(1px, 1px, 5px, #888888, false);
+}
+
+.main__intro__button, .enroll__content__button, .history__content__button{
+    &:hover{
+        background-color: $button-main-hover;
+        border: 1px solid $button-main-hover;
+        @include transition (0.2s ease);
+    }
+}
+
+.about__content__button,
+.contacts__nested__card__button{
+    &:hover{
+        background-color: $color-main-hover;
+        border: 1px solid $color-main-hover;
+        @include transition (0.2s ease);
+    }
+
+}
+
+
+.service__nested__card__button, .team__nested__card__button{
+    &:hover{
+        background-color: $button-secondary-hover;
+        border: 1px solid $button-secondary-hover;
+        @include transition (0.2s ease);
+    }
+}
+
+.main__intro__button, .enroll__content__button, .history__content__button,
+.about__content__button, .contacts__nested__card__button, .service__nested__card__button,
+.team__nested__card__button{
+    &:active{
+        position: relative;
+        top: 1px;
+    }
+}
