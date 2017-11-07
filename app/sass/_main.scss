@@ -404,6 +404,10 @@ input, textarea{
 @media screen and (max-width: 480px){
     .main__intro__title{
         font-size: 25px;
+        &:after{
+            top: 140%;
+            left: 42.5%;
+        }
     }
     .main__intro__about{
         font-size: 18px;
@@ -411,12 +415,27 @@ input, textarea{
     .about__content__title, .service__content__title, .history__content__title,
     .team__content__title, .contacts__content__title, .enroll__content__title{
         font-size: 20px;
+        &:after{
+            top: 140%;
+            left: 42.5%;
+        }
+    }
+    .history, .enroll{
+        height: 320px;
     }
     .about__content__text, .service__content__text, .history__content__text,
     .team__content__text, .enroll__content__text, .contacts__content__text{
         padding: 20px 0 16px;
     }
+    .service__content__title, .history__content__title, .team__content__title,
+    .enroll__content__title{
+        margin: 30px 0 60px 0;
+    }
+    .service__content__text, .history__content__text, .team__content__text,
+    .enroll__content__text{
+        display: none;
+    }
     .main, .people, .history, .enroll{
-    background-attachment: scroll;
-}
+        background-attachment: scroll;
+    }
 }
