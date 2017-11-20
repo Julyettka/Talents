@@ -4,7 +4,8 @@ var browserSync = require('browser-sync');
 var imageMin = require('gulp-imagemin');
 
 gulp.task('sass', function(){ //name my task whatever I like
-    return gulp.src(['app/sass/styles.scss', 'app/sass/effects.scss', 'app/sass/font-awesome/font-awesome.scss']) //source from where I take these files
+    return gulp.src(['app/sass/styles.scss', 'app/sass/effects.scss',
+    'app/sass/font-awesome/font-awesome.scss', 'app/sass/first.scss']) //source from where I take these files
     .pipe(scss()) //how I declared it when required it
     .pipe(gulp.dest('pro/css')) //destination where I put its files
     .pipe(browserSync.reload({stream: true}))
@@ -25,7 +26,7 @@ gulp.task('browser-sync', function(){
         })
     })
 
-gulp.task('watch', ['browser-sync', 'imageMin'], function(){ //all tasks I launch before watch task
+gulp.task('watch', ['browser-sync', 'sass', 'imageMin'], function(){ //all tasks I launch before watch task
     // files I listen to in the watch process
     gulp.watch('app/sass/**/*.scss', ['sass']);
     gulp.watch('./*.html', browserSync.reload);
