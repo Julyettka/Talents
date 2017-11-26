@@ -118,6 +118,9 @@
     grid-row: auto / span 1;
     display: subgrid;
     text-align: left;
+    form input, textarea{
+        outline: none;
+    }
 }
 
 .footer__nested__card>p{

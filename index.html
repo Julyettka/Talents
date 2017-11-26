@@ -6,11 +6,8 @@
     <meta name="description" content="Talents center - центр развития таланта">
     <meta name="keywords" content="центр развития, таланты">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pro/css/first.css">
-    <link rel="stylesheet" href="pro/css/styles.css">
-    <link rel="stylesheet" href="pro/css/font-awesome.css">
-    <link rel="stylesheet" href="pro/css/effects.css">
-    <link rel="stylesheet" href="pro/css/animate.min.css">
+    <link rel="stylesheet" href="pro/mincss/first.min.css">
+    <link rel="stylesheet" href="pro/mincss/animate.min.css">
 </head>
 <body>
     <div class="grid">
@@ -29,10 +26,33 @@
                 </picture></a>
                 <ul class="menu__links">
                     <li><a class="menu__links__main" href="index.html">Главная</a></li>
-                    <li><a class="menu__links__development" href="develop.html">Развитие таланта<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                    <li>
+                        <a class="menu__links__development" href="develop.html">Развитие таланта<i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul>
+                            <li><a href="#">Шаг развития 1</a></li>
+                            <li><a href="#">Шаг развития 2</a></li>
+                            <li><a href="#">Шаг развития 3</a></li>
+                        </ul>
+                    </li>
                     <li><a class="menu__links__evaluation" href="evaluation.html">Оценивание</a></li>
-                    <li><a href="teaching.html">Обучение<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-                    <li><a href="about.html">О проекте<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                    <li>
+                        <a href="teaching.html">Обучение<i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul>
+                            <li><a href="#">Обучение 1</a></li>
+                            <li><a href="#">Обучение 2</a></li>
+                            <li><a href="#">Обучение 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">О проекте<i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul>
+                            <li><a href="#">Немного о нас</a></li>
+                            <li><a href="#">Наша команда</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contacts.html">Контакты</a></li>
                     <li><a class="menu__links__login" href="signin.html">Вход</a></li>
                 </ul>
@@ -188,5 +208,8 @@
     <script>
         new WOW().init();
     </script>
+    <link rel="stylesheet" href="pro/mincss/styles.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pro/mincss/effects.min.css">
 </body>
 </html>

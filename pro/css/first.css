@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 12px;
   text-align: left;
@@ -11,6 +12,36 @@ ul.menu__links {
   text-decoration: none;
   text-align: left;
   color: black; }
+  ul.menu__links li {
+    position: relative; }
+    ul.menu__links li a {
+      white-space: nowrap; }
+    ul.menu__links li:hover ul {
+      left: 0;
+      /* Приносим подпункты обратно на экран, когда нужно */
+      opacity: 1; }
+    ul.menu__links li:hover ul a {
+      background: white; }
+      ul.menu__links li:hover ul a:hover {
+        background-color: #362e86;
+        color: white; }
+
+/* additional folded nav*/
+.menu__links ul {
+  position: absolute;
+  top: 20px;
+  -webkit-transition: 0.25s linear opacity;
+  -moz-transition: 0.25s linear opacity;
+  -ms-transition: 0.25s linear opacity;
+  -o-transition: 0.25s linear opacity;
+  transition: 0.25s linear opacity;
+  left: -9999px;
+  /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+  opacity: 0.5; }
+  .menu__links ul li {
+    padding: 10px; }
+    .menu__links ul li a {
+      white-space: nowrap; }
 
 /*grids styles */
 .main {

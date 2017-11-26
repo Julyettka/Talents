@@ -141,6 +141,8 @@ table {
   grid-row: auto / span 1;
   display: subgrid;
   text-align: left; }
+  .contacts__nested__card form input, .contacts__nested__card textarea {
+    outline: none; }
 
 .footer__nested__card > p {
   font-family: "LatoRegular", Arial, Helvetica, sans-serif;
