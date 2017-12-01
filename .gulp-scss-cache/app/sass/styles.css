@@ -40,12 +40,58 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*dark violet, stripe */
+/*violet, hover for black text */
+/*darker violet hover */
+/*pink button */
+/*pink button hover */
+/*dark grey*/
+/*even more greyer! */
+/* standart blue FB color*/
+/* standart red google plus color*/
+/*light grey*/
 /* sections:
 - about,
 - service,
 - history
 - team
 - enroll */
+input, textarea, select {
+  outline: none; }
+
+.navigation {
+  -webkit-box-shadow: 1px 1px 5px #888888;
+  -moz-box-shadow: 1px 1px 5px #888888;
+  box-shadow: 1px 1px 5px #888888; }
+
+.main__intro__button:hover, .enroll__content__button:hover, .history__content__button:hover {
+  background-color: #b20054;
+  border: 1px solid #b20054;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+
+.about__content__button:hover,
+.contacts__nested__card__button:hover {
+  background-color: #2e2771;
+  border: 1px solid #2e2771;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+
+.service__nested__card__button:hover, .team__nested__card__button:hover {
+  background-color: #232329;
+  border: 1px solid #232329;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease; }
+
 .about__content, .service__content, .team__content, .contacts__content {
   width: 100%;
   margin: 55px auto 0 auto;
@@ -100,8 +146,6 @@ table {
   min-width: 48px;
   width: 122px;
   height: 44px;
-  cursor: pointer;
-  outline: none;
   color: white;
   font-family: "LatoSemibold", Arial, Helvetica, sans-serif;
   font-size: 12px; }
@@ -141,8 +185,6 @@ table {
   grid-row: auto / span 1;
   display: subgrid;
   text-align: left; }
-  .contacts__nested__card form input, .contacts__nested__card textarea {
-    outline: none; }
 
 .footer__nested__card > p {
   font-family: "LatoRegular", Arial, Helvetica, sans-serif;
@@ -280,6 +322,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
   .main, .people, .history, .enroll {
     background-attachment: scroll; } }
+/*dark violet, stripe */
+/*violet, hover for black text */
+/*darker violet hover */
+/*pink button */
+/*pink button hover */
+/*dark grey*/
+/*even more greyer! */
+/* standart blue FB color*/
+/* standart red google plus color*/
+/*light grey*/
 @font-face {
   font-family: "LatoRegular";
   src: url("../fonts/Lato/LatoRegular.ttf") format("truetype"), url("../fonts/Lato/LatoRegular.woff") format("woff"), url("../fonts/Lato/LatoRegular.eot?") format("eot");
@@ -305,138 +357,5 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   src: url("../fonts/Lato/LatoBoldItalic.ttf") format("truetype"), url("../fonts/Lato/LatoBoldItalic.woff") format("woff"), url("../fonts/Lato/LatoBoldItalic.eot?") format("eot");
   font-weight: normal;
   font-style: normal; }
-.header {
-  grid-area: header;
-  background-color: #362e86;
-  width: 100%;
-  position: fixed;
-  z-index: 3; }
-
-.logo {
-  cursor: pointer; }
-
-.navigation {
-  grid-area: navigation;
-  width: 100%;
-  background-color: white;
-  top: 36px;
-  position: fixed;
-  z-index: 3; }
-
-.contact-stripe {
-  height: 24px;
-  font-family: "LatoRegular", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  margin-top: 12px; }
-  .contact-stripe .contact-stripe__phone {
-    padding-left: 30px; }
-  .contact-stripe .contact-stripe__phone, .contact-stripe .contact-stripe__email {
-    color: white; }
-
-.navigation {
-  height: 90px; }
-
-.menu {
-  position: relative;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  -ms-grid-row-align: center;
-  align-items: center; }
-
-.menu__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 75%; }
-  .menu__links li {
-    font-family: "LatoSemibold", Arial, Helvetica, sans-serif;
-    text-transform: uppercase; }
-    .menu__links li a {
-      padding: 10px;
-      color: black; }
-      .menu__links li a:hover {
-        color: #4f45b3; }
-
-.menu__links__login {
-  position: relative;
-  text-transform: capitalize;
-  font-size: 13px;
-  padding: 8px 15px 8px 30px !important;
-  border: 1px solid black;
-  border-radius: 10px; }
-  .menu__links__login:before {
-    content: " ";
-    box-sizing: border-box;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 9px;
-    left: 10px;
-    background: url("../../pro/img/login.png") center no-repeat; }
-  .menu__links__login:hover {
-    border: 1px solid #4f45b3; }
-
-.fa-angle-down {
-  padding-left: 5px; }
-
-.navbar-toggle {
-  font-size: 22px;
-  margin-bottom: 8px;
-  color: #585858;
-  padding: 9px 10px;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  display: none; }
-
-@media only screen and (min-width: 635px) and (max-width: 1023px) {
-  .navigation .menu {
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center; } }
-@media only screen and (min-width: 914px) and (max-width: 1023px) {
-  .menu__links {
-    width: 83%; } }
-@media only screen and (min-width: 864px) and (max-width: 913px) {
-  .menu__links {
-    width: 88%; } }
-@media only screen and (min-width: 755px) and (max-width: 863px) {
-  .menu__links {
-    width: 90%; }
-
-  .menu__links__main {
-    display: none; } }
-@media only screen and (min-width: 635px) and (max-width: 754px) {
-  .menu__links__main, .menu__links__evaluation {
-    display: none; }
-
-  .menu__links {
-    width: 90%; } }
-@media screen and (max-width: 634px) {
-  .menu__links {
-    display: none; }
-
-  .navbar-toggle {
-    display: unset; } }
 
 /*# sourceMappingURL=styles.css.map */

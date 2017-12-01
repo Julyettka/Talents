@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .header{
     grid-area: header;
@@ -25,7 +26,7 @@
     height: 24px;
     font-family: $LatoRegular;
     font-size: 12px;
-    margin-top: 12px;
+    margin-top: 12px !important;
     .contact-stripe__phone{
         padding-left: 30px;
     }
@@ -98,6 +99,46 @@
     border: 1px solid transparent;
     border-radius: 4px;
     display: none;
+}
+
+ul.menu__links{
+    font-size: 12px;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    li{
+        position: relative;
+        a{
+            white-space: nowrap;
+        }
+        &:hover ul{
+        left: 0; /* Приносим подпункты обратно на экран, когда нужно */
+        opacity: 1;
+        }
+        &:hover ul a{
+            background: white;
+            &:hover{
+                background-color: $color-main;
+                color: white;
+            }
+        }
+    }
+}
+
+/* additional folded nav*/
+.menu__links ul{
+    position: absolute;
+    top: 20px;
+    @include transition(0.25s linear opacity);
+    left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+    opacity:0.5;
+    li{
+        padding: 10px;
+        a{
+            white-space: nowrap;
+        }
+    }
+
 }
 
 @media only screen and (min-width: 635px) and (max-width: 1023px){

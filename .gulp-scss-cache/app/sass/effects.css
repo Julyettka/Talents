@@ -1,40 +1,103 @@
-.navigation {
-  -webkit-box-shadow: 1px 1px 5px #888888;
-  -moz-box-shadow: 1px 1px 5px #888888;
-  box-shadow: 1px 1px 5px #888888; }
+/*dark violet, stripe */
+/*violet, hover for black text */
+/*darker violet hover */
+/*pink button */
+/*pink button hover */
+/*dark grey*/
+/*even more greyer! */
+/* standart blue fb color*/
+/* standart red google color*/
+/*light grey*/
+.modal__signin__content__fb, .modal__signin__content__gp {
+  margin: 20px 5px;
+  padding: 8px 0 38px;
+  min-width: 48px;
+  width: 176px;
+  height: 38px;
+  color: white;
+  font-size: 12px; }
 
-.main__intro__button:hover, .enroll__content__button:hover, .history__content__button:hover {
-  background-color: #b20054;
-  border: 1px solid #b20054;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -ms-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  transition: 0.2s ease; }
+.modal__signin__content__button {
+  margin: 20px 5px;
+  padding: 16px 0 34px;
+  min-width: 48px;
+  width: 100%;
+  height: 40px;
+  background: #362e86;
+  border: 1px solid #362e86;
+  color: white;
+  font-size: 14px; }
 
-.about__content__button:hover,
-.contacts__nested__card__button:hover {
-  background-color: #2e2771;
-  border: 1px solid #2e2771;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -ms-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  transition: 0.2s ease; }
+.fa-facebook, .fa-google-plus {
+  padding-right: 7px; }
 
-.service__nested__card__button:hover, .team__nested__card__button:hover {
-  background-color: #232329;
-  border: 1px solid #232329;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -ms-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  transition: 0.2s ease; }
+#openModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  -webkit-transition: 0.25s ease-in opacity;
+  -moz-transition: 0.25s ease-in opacity;
+  -ms-transition: 0.25s ease-in opacity;
+  -o-transition: 0.25s ease-in opacity;
+  transition: 0.25s ease-in opacity; }
+  #openModal:target {
+    display: block; }
+  #openModal .modal__signin {
+    width: 450px;
+    font-family: "LatoSemibold", Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 10% auto;
+    padding: 10px;
+    background: #fff; }
+    #openModal .modal__signin .modal__signin__content {
+      position: relative;
+      margin: 0 auto;
+      padding: 25px 35px;
+      border: 1px solid #cccccc; }
+      #openModal .modal__signin .modal__signin__content h2 {
+        font-family: "LatoBlack", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase; }
+      #openModal .modal__signin .modal__signin__content .modal__signin__content__fb {
+        background-color: #336699;
+        border: 1px solid #336699; }
+      #openModal .modal__signin .modal__signin__content .modal__signin__content__gp {
+        background-color: #dd4b39;
+        border: 1px solid #dd4b39; }
+      #openModal .modal__signin .modal__signin__content .modal__signin__content__or {
+        font-size: 12px;
+        position: absolute;
+        top: 137px;
+        padding: 0 10px;
+        right: 45%;
+        background: white; }
+      #openModal .modal__signin .modal__signin__content .modal__signin__content__form label {
+        margin: 5px 0;
+        display: inline-block;
+        font-size: 14px; }
+      #openModal .modal__signin .modal__signin__content a {
+        font-size: 14px;
+        color: #4f45b3;
+        text-decoration: underline; }
+      #openModal .modal__signin .modal__signin__content p {
+        text-align: center; }
 
-.main__intro__button:active, .enroll__content__button:active, .history__content__button:active,
-.about__content__button:active, .contacts__nested__card__button:active, .service__nested__card__button:active,
-.team__nested__card__button:active {
-  position: relative;
-  top: 1px; }
+.modal__close {
+  z-index: 11;
+  line-height: 25px;
+  position: absolute;
+  right: 12px;
+  text-align: center;
+  top: 12px;
+  width: 24px; }
+  .modal__close:hover {
+    color: #4f45b3;
+    cursor: pointer; }
 
 /*# sourceMappingURL=effects.css.map */

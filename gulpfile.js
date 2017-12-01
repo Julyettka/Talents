@@ -6,7 +6,7 @@ var cssMin = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
 gulp.task('sass', function(){ //name my task whatever I like
-    return gulp.src(['app/sass/styles.scss', 'app/sass/effects.scss',
+    return gulp.src(['app/sass/styles.scss', 'app/sass/popups.scss',
     'app/sass/font-awesome/font-awesome.scss', 'app/sass/first.scss']) //source from where I take these files
     .pipe(scss()) //how I declared it when required it
     .pipe(gulp.dest('pro/css')) //destination where I put its files
@@ -41,6 +41,7 @@ gulp.task('browser-sync', function(){
 gulp.task('watch', ['browser-sync', 'sass', 'imageMin', 'minify-css'], function(){ //all tasks I launch before watch task
     // files I listen to in the watch process
     gulp.watch('app/sass/**/*.scss', ['sass']);
+    gulp.watch('pro/css/*', ['minify-css']);
     gulp.watch('./*.html', browserSync.reload);
     gulp.watch('app/js/*.js', browserSync.reload);
     })
