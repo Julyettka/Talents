@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+/*grids styles */
+.grid__blog{
+    font-family: $LatoRegular;
+    line-height: 1.444;
+    margin: 0 auto;
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 1em;
+}
+
+.grid__blog>section{
+    padding: 1.5em;
+}
+
+.grid__blog>section>h1{
+    margin-bottom: 25px;
+    color: $color-main;
+    font-size: 2em;
+}
+
+.grid__blog>section>ul>li{
+    margin: 20px 0;
+    list-style-type: disc;
+}

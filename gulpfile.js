@@ -7,7 +7,8 @@ var rename = require('gulp-rename');
 
 gulp.task('sass', function(){ //name my task whatever I like
     return gulp.src(['app/sass/styles.scss', 'app/sass/popups.scss',
-    'app/sass/font-awesome/font-awesome.scss', 'app/sass/first.scss']) //source from where I take these files
+    'app/sass/font-awesome/font-awesome.scss', 'app/sass/first.scss',
+    'app/sass/blog.scss']) //source from where I take these files
     .pipe(scss()) //how I declared it when required it
     .pipe(gulp.dest('pro/css')) //destination where I put its files
     .pipe(browserSync.reload({stream: true}))

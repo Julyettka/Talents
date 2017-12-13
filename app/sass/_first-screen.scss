@@ -24,8 +24,23 @@ button{
 }
 
 /*grids styles */
+.grid{
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "header"
+                        "navigation"
+                        "main"
+                        "about"
+                        "service"
+                        "history"
+                        "team"
+                        "enroll"
+                        "contacts"
+                        "footer";
+}
 
 .main{
+    margin-top: 50px;
     position: relative;
     grid-area: main;
     background: $bg-main;
@@ -105,20 +120,6 @@ footer{
     background-attachment: fixed;
 }
 
-.grid{
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas: "header"
-                        "navigation"
-                        "main"
-                        "about"
-                        "service"
-                        "history"
-                        "team"
-                        "enroll"
-                        "contacts"
-                        "footer";
-}
 
 .content-wrapper{
     max-width: 1024px;
