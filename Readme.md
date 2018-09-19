@@ -1,7 +1,6 @@
 # Project overview
 Front-end side of website for talents project. The markup is implemented with the help of gulp, using a sass preprocessor.
 ![main](readme_pics/main.png)
-![login](readme/pics/login.png)
 
 ## How to install application files
 Make sure you've installed node.js https://nodejs.org/ so your computer is able to undertsand 'npm' command.
